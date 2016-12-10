@@ -3,11 +3,16 @@ html, body { background: #222; width: 100%; height: 100%; }
 .app { width: 100%; height: 100%; }
 
 /* stage---start */
-.stage { position: relative; width: 100%; height: 680px; }
+.stage { position: relative; width: 100%; height: 100%; }
 
 /* stage---end */
 /* image---start */
 .img-sec { position: relative; width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+.img-figure { width: 320px; height: 360px; margin: 0; padding: 30px; background: #fff; box-sizing: border-box; position: absolute; }
+.img-figure img { width: 260px; height: 260px; }
+
+figcaption { text-align: center; }
+figcaption .img-title { margin-top: 20px; color: #a7a0a2; font-size: 16px; }
 
 /* image---end */
 /* controller---start */

@@ -14,12 +14,11 @@ html,body{
 .stage{
   position:relative;
   width:100%;
-  height:680px;
+  height:100% ;
 }
 
 
 /* stage---end */
-
 
 
 /* image---start */
@@ -30,6 +29,36 @@ html,body{
   height:100%;
   overflow:hidden;
   background:#ddd;
+
+//  使生成的css文件中，.img-sec和.img-figure同级，避免层级过多而影响性能的问题
+  @at-root{
+    .img-figure{
+        width:320px;
+        height:360px;
+        margin:0;
+        padding:30px;
+        background:#fff;
+        box-sizing:border-box;
+
+        position:absolute;
+
+        img{
+          width:260px;
+          height:260px;
+        }
+    }
+
+    figcaption{
+      text-align:center;
+
+      .img-title{
+        margin-top:20px;
+        color:#a7a0a2;
+        font-size:16px;
+      }
+    }
+    
+  }
 }
 
 
